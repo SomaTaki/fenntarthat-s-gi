@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background: #2a9d8f;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.kiemelt {
+    background: linear-gradient(to bottom, #264653, #2a9d8f);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.kiemelt h1 {
+    font-size: 3em;
+}
+
+.gomb {
+    background: #e76f51;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.rolunk, .szolgaltatasok, .kapcsolat, .terkep {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.statisztika {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.adat {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adat h3 {
+    color: #2a9d8f;
+}
+
+.szolgaltatasok ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.szolgaltatasok li {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.kapcsolat form input, .kapcsolat form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kapcsolat form button {
+    background: #2a9d8f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.kapcsolat form button:hover {
+    background: #264653;
+}
+
+footer {
+    background: #264653;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    .statisztika, .szolgaltatasok ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+iframe {
+    width: 100%;
+}
+
+.szolgaltatasok ul {
+    list-style: none; 
+    padding: 0; /
+}
