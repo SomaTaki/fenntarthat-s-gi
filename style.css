@@ -1,9 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
     background: #f0f0f0;
     color: #333;
+    overflow-x: hidden;
 }
 
 header {
@@ -128,22 +127,49 @@ footer {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .statisztika, .szolgaltatasok ul {
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 iframe {
     width: 100%;
 }
 
 .szolgaltatasok ul {
     list-style: none; 
-    padding: 0; /
+    padding: 0; 
+}
+
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        text-align: center;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    
+}
+
+.szolgaltatasok ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .statisztika {
+        flex-direction: column; 
+        align-items: center; 
+        gap: 20px; 
+    }
+
+    .adat {
+        width: 80%; 
+        max-width: 300px; 
+    }
+}
+
+#rolunk_p{
+    font-weight: bold;
+    color: #2a9d8f;
 }
