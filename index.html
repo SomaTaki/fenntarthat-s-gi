@@ -79,6 +79,19 @@
             <textarea id="uzenet" placeholder="Üzenet" required></textarea>
             <button type="submit">Küldés</button>
         </form>
+        
+        <h2>Támogatás</h2>
+        <p>Válassza ki, mekkora összeggel szeretné támogatni ügyünket!</p>
+    
+        <label for="tamogatasOsszeg">Összeg: <span id="osszegErtek">5000</span> Ft</label>
+        <input type="range" id="tamogatasOsszeg" min="1000" max="10000" step="500" value="5000">
+    
+        <label for="tamogatottNev">Kit szeretne támogatni?</label>
+        <input type="text" id="tamogatottNev" placeholder="Írja be a nevet..." required>
+    
+        <button onclick="megjelenitTamogatas()">Támogatás elküldése</button>
+    
+        <h3 id="tamogatasEredmeny"></h3>
     </section>
 
     <footer>

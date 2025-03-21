@@ -136,7 +136,7 @@ iframe {
     padding: 0; 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
     nav ul {
         flex-direction: column; 
         text-align: center;
@@ -172,4 +172,32 @@ iframe {
 #rolunk_p{
     font-weight: bold;
     color: #2a9d8f;
+}
+
+.kapcsolat {
+    padding: 40px 20px;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
+}
+
+.kapcsolat input, .kapcsolat button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.kapcsolat button {
+    background: #2a9d8f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.kapcsolat button:hover {
+    background: #264653;
 }
